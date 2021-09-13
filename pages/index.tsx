@@ -45,7 +45,7 @@ export default function Home() {
             and web apps.
           </Paragraph>
           <Grid columns={{ '@bp2': '2' }} gap="5" css={{ mx: '-$4' }}>
-            <NextLink href="/docs/primitives" passHref>
+            <NextLink href="/primitives" passHref>
               <Card as="a" variant="ghost">
                 <Box css={{ p: '$4' }}>
                   <Heading css={{ fontWeight: 500, mb: '$2' }}>Primitives</Heading>
