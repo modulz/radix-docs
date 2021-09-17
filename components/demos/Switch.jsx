@@ -43,14 +43,16 @@ const Label = styled('label', {
 });
 
 const SwitchDemo = () => (
-  <Flex css={{ alignItems: 'center' }}>
-    <Label htmlFor="s1" css={{ paddingRight: 15 }}>
-      Airplane mode
-    </Label>
-    <Switch defaultChecked id="s1">
-      <SwitchThumb />
-    </Switch>
-  </Flex>
+  <form>
+    <Flex css={{ alignItems: 'center' }}>
+      <Label htmlFor="s1" css={{ paddingRight: 15 }}>
+        Airplane mode
+      </Label>
+      <Switch defaultChecked id="s1">
+        <SwitchThumb />
+      </Switch>
+    </Flex>
+  </form>
 );
 
 export default SwitchDemo;

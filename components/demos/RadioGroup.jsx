@@ -48,26 +48,28 @@ const Label = styled('label', {
 });
 
 export const CheckboxDemo = () => (
-  <RadioGroup defaultValue="default" aria-label="View density">
-    <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
-      <RadioGroupRadio value="default" id="r1">
-        <RadioGroupIndicator />
-      </RadioGroupRadio>
-      <Label htmlFor="r1">Default</Label>
-    </Flex>
-    <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
-      <RadioGroupRadio value="comfortable" id="r2">
-        <RadioGroupIndicator />
-      </RadioGroupRadio>
-      <Label htmlFor="r2">Comfortable</Label>
-    </Flex>
-    <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
-      <RadioGroupRadio value="compact" id="r3">
-        <RadioGroupIndicator />
-      </RadioGroupRadio>
-      <Label htmlFor="r3">Compact</Label>
-    </Flex>
-  </RadioGroup>
+  <form>
+    <RadioGroup defaultValue="default" aria-label="View density">
+      <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
+        <RadioGroupRadio value="default" id="r1">
+          <RadioGroupIndicator />
+        </RadioGroupRadio>
+        <Label htmlFor="r1">Default</Label>
+      </Flex>
+      <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
+        <RadioGroupRadio value="comfortable" id="r2">
+          <RadioGroupIndicator />
+        </RadioGroupRadio>
+        <Label htmlFor="r2">Comfortable</Label>
+      </Flex>
+      <Flex css={{ margin: '10px 0', alignItems: 'center' }}>
+        <RadioGroupRadio value="compact" id="r3">
+          <RadioGroupIndicator />
+        </RadioGroupRadio>
+        <Label htmlFor="r3">Compact</Label>
+      </Flex>
+    </RadioGroup>
+  </form>
 );
 
 export default CheckboxDemo;

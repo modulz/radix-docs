@@ -52,12 +52,14 @@ const StyledThumb = styled(SliderPrimitive.Thumb, {
 });
 
 const SliderDemo = () => (
-  <StyledSlider defaultValue={[50]} max={100} step={1} aria-label="Volume">
-    <StyledTrack>
-      <StyledRange />
-    </StyledTrack>
-    <StyledThumb />
-  </StyledSlider>
+  <form>
+    <StyledSlider defaultValue={[50]} max={100} step={1} aria-label="Volume">
+      <StyledTrack>
+        <StyledRange />
+      </StyledTrack>
+      <StyledThumb />
+    </StyledSlider>
+  </form>
 );
 
 export default SliderDemo;
